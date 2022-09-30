@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* .boxContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+} */
+
+.profileContainer{
+    font-family: 'Inter'; 
+    /* height: 100vh; */
+    /* background-size: 100%; */
+    color: #F5F5F5;
+    font-weight: 300;
+    /* background-image:linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
+
+    background-color: #191C1F;
+}
+
+.profileContainer .box{
+    /* position: relative; */
+    /* border:1px red solid; */
+    width: 100%;
+    overflow: hidden;
+    border: 1px rgb(43, 46, 49) solid;
+    padding: 1rem;
+    border-radius: 8px;
+    /* transition: all 0.5s ease-in-out ; */
+}
+.profileContainer .box:hover{
+    cursor: pointer;
+    border-color: #434547;
+    border: 2.5px #434547 solid;
+    bottom: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.profileContainer .boxContainer{
+
+    width: 97.4%;
+    /* display:grid; */
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-rows: 100px 150px 50px; */
+    
+    /* grid-template-rows: repeat(6, 70vh); */
+    border: 1px rgb(43, 46, 49) solid;
+    padding: 5vw;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.profileContainer p, .profileContainer h3, .profileContainer h2{
+    font-family: 'Inter';
+}
+.profileContainer p{
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+#upper-para{
+    font-size:0.7rem ;
+    margin: 0.8rem 0 0.2rem 0;
+}
+.profileContainer h3{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.box-content {
+    padding-left: 10px;
+}
+
+.image{
+    border-radius: 5px;
+}
+.box button{
+    position:relative;
+    font-family:'Inter';
+    border: none;
+    background-color: #F5F5F5;
+    color: #191C1F;
+    border-radius: 9px;
+    padding:0.5rem 0.8rem;
+    font-size: small;
+    font-weight: 500;
+    top:20vh;
+    /* margin-bottom: -13vh; */
+    /* bottom: 13vh; */
+    /* margin-top: -13vh; */
+    left: 5vw;
+    opacity: 0;
+    /* display: hidden; */
+    /* box-shadow: 1px 2px black ; */
+    /* padding-bottom:-30px; */
+    transition: opacity 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+}
+
+.box:hover button{
+    opacity: 0.59;
+    top: 19vh;
+}
+
+.box button:hover {
+    cursor: pointer;
+    opacity: 1;
+    /* display: block; */
+}
+
+
+.grey-container{ 
+    margin-top: 1vh;
+    background-color:#222528 ;
+    border-radius: 7px;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: space-between; */
+
+
+}
+
+.greyinner-container h5, .greyinner-container p{
+    font-family: 'Inter';
+    background-color:#222528  ;
+}
+
+.grey-container h5{
+    padding-top: 0.5vh;
+
+}
+
+.greyinner-container{
+    background-color:#222528 !important ;
+
+}
+#greyinnerSecond{
+
+    padding-left: 6vw;
+}
+
+/* Profile Cover */
+.profileCover{
+    border-radius: 20px;
+    width: 97.4%;
+    margin-left: 1.2vw;
+    height: 35vh;
+    background-color: #222528;
+}
+
+.profileCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+    left: 45vw;
+    top: 23vh;
+    border: 1px black solid;
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.profileCircle:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    /* border: 1px brown solid ; */
+
+
+}
+
+
+.profileContainer span{
+    /* background-color: red; */
+}
+
+
+
+.mantine-UnstyledButton-root:hover{
+    background-color: #222528;
+}
+
+/* .mantine-Tabs-tabsList{
+    width: 12.29%;
+    margin: 0 auto;
+} */
+.tabListContainer{
+    width: 13vw;
+    margin: 0 auto;
+}
+
+
+.ellipsis{
+    position: relative;
+    top: 17.3vh;
+    right: 3.5vw;
+}
+
+.tabContainer{
+
+    margin-top: 9.3vh;
+}
+
+
+/* Mantine modal button */
+.mantine-Modal-close{
+    background-color:#424446 ;
+}
+.mantine-Modal-close:hover{
+    background-color:#424446 ;
+
+    opacity: 0.9;
+}
+
+.mantine-Modal-modal,.mantine-Modal-title{
+    background-color: #191C1F;
+}
+
+
+/* Mantine oops notification */
+
+#hello-there{
+    border-color:#222528 ;
+}

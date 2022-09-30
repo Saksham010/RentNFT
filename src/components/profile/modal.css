@@ -1,0 +1,156 @@
+.modal-image{
+    /* border: 1px red solid; */
+    width: 25vw;
+    height: 25vw;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.modalOneContainer{
+    /* border: 1px red solid; */
+    flex: 1;
+}
+.modalTwoContainer{
+    /* border: 1px green solid; */
+    flex: 1.25;
+    padding:0.5vh 3vw;
+}
+
+.modalTwoContainer p{
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.modalTwoContainer h3{
+    padding-top: 1vh;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+.modalTwoContainer .smallText{
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 0.5vh;
+    
+}
+.modalTwoContainer .smallText span{
+   font-size: 1rem;
+   color: #7A7C7D;
+}
+
+.mantine-Input-input{
+    background-color:#25262B;
+    color: #ADB5BD;
+    padding-top: 0.6vh;
+    padding-left: 1.6vw;
+    margin-top: 0.8vh;
+
+}
+.icon-tabler-clock, .icon-tabler-cash{
+    padding-left: 0.3rem;
+
+}
+
+.icon-tabler-clock-off{
+    padding-left: 0.4rem;
+}
+
+.modalLowerBox{
+    padding-top: 2.2vh;
+}
+
+.modalLowerBox h5{
+    font-family: 'Inter';
+    font-weight: 500;
+    margin-top: 2vh;
+}
+
+.modalLowerBox button{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: whitesmoke;
+    color:black;
+    border: none;
+    padding: 0.7rem 0.8rem;
+    border-radius: 7px;
+    /* border: 1px #CED4DA solid; */
+}
+.modalLowerBox button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modalbtnCombined{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: right;
+}
+.modalbtn1{
+    padding-right: 1vw;
+}
+/* 
+
+
+.mantine-Tabs-tabsList{
+    width:20%;
+    margin: 0;
+} */
+
+.modalWrapper{
+    display: flex;
+}
+
+.modalTabContainer{
+    width: 185px;
+    margin:0 auto;
+    
+}
+
+.modalTabContainer span{
+    /* font-family: 'Inter'; */
+    font-weight: 400;
+}
+
+
+.modalTab{
+    /* Later height subject to change */
+    height: 15vh; 
+    /* border: 1px red solid; */
+    padding-top: 2.7vh;
+    
+}
+
+.modalTab p{
+    font-size: 0.8rem;
+    font-weight: 200;
+    /* border: 1px grey solid; */
+    font-family: 'Inter';
+    padding: 1vh 0 0 1vw;
+    overflow: hidden;
+    
+}
+
+/* .mantine-Select-dropdown{
+    background-color: black;
+
+} */
+
+.mantine-Select-item:active{
+    background-color: red;
+}
+
+#mantine-r11{
+    cursor: not-allowed;
+    cursor: none;
+}
+.mantine-rynikm input{
+    background-color: aqua;
+
+}
+.mantine-1m3pqry input:focus{
+    
+}

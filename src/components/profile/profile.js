@@ -198,7 +198,6 @@ export default function Profile(props){
     const elements = nftData.map((items,i)=>{
         if(items.metadata != null || undefined){
             // console.log("This is item: ",items);
-            //String to json (Metadata is received as  string here)
             const parsedMetadata = JSON.parse(items.metadata); 
             console.log("Metadata",parsedMetadata);
 

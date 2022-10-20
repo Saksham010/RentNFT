@@ -213,8 +213,8 @@ export default function Profile(props){
             }
             console.log("PARSED IMAGE: ",parsedMetadata.image);
             return (
-                <div>
-                    <div className="box" key={i}>
+                <div key={i}>
+                    <div className="box">
 
                         <div className="image" style={{backgroundImage:`url(${parsedMetadata.image})`, width:"100%", height:"26vh", backgroundRepeat:"no-repeat", backgroundPosition:"center", objectFit:"contain"}}>
                             <button onClick={()=>{
@@ -246,7 +246,7 @@ export default function Profile(props){
                             </div>
 
                         </div>
-                        <style jsx>{`
+                        <style jsx="true">{`
                             .box{
                                 opacity:1;
                                 transition:opacity 0.2;

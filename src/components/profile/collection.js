@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { SimpleGrid } from "@mantine/core";
 import "./collection.css";
 
-
 export default function Collection(props){
 
 
@@ -19,10 +18,6 @@ export default function Collection(props){
                 </SimpleGrid>
 
             </div>
-    
-
-
-
         </>
     )
 

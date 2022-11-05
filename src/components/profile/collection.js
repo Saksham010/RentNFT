@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SimpleGrid } from "@mantine/core";
 import "./collection.css";
+import { BackEase } from "@babylonjs/core";
 
 
 export default function Collection(props){
@@ -19,8 +20,6 @@ export default function Collection(props){
                 </SimpleGrid>
 
             </div>
-
-            {/* <RentModal isModalOpen={props.modalState}/> */}
     
 
 

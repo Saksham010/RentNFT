@@ -134,6 +134,9 @@
     padding: 0.7rem 1.1rem;
     margin-right: 1.5rem;
     font-size: 0.73rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #222528;
     
 
 }
@@ -143,9 +146,7 @@
     cursor: pointer;
 }
 .walletContainer a{
-    font-family: 'Inter';
-    font-weight: 600;
-    color: #222528;
+
     text-decoration: none;
 }
 
@@ -164,4 +165,20 @@
 
 .input-container{
     width: 100%;
+}
+
+/* Marketplace and List tab */
+.marketbox{
+    padding-right: 1vw;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.market-text{
+    text-decoration: none;
+}
+
+.marketbox span:hover{
+    opacity: 0.9;
+
 }

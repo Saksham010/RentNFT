@@ -48,19 +48,28 @@ export default function Navbar(props){
                 </div>
 
                 <div className="combineOne">
-            
-                    {/* <div className="userIcon">
-                        <Link to='/profile' className="profile-icon">
-                                <FontAwesomeIcon icon={faUserCircle} size="2x" className="mainUserIcon"></FontAwesomeIcon>
-                        </Link>
-                    </div> */}
                     
-                    {buttonData== 'Connect wallet'?<Link to="/connect"><div className="walletContainer"><a>{buttonData}</a></div></Link>:<div className="walletContainer"><a onClick={disconnectWallet}>{buttonData}</a></div>}
+                    {buttonData== 'Connect wallet'?<Link to="/connect"><div className="walletContainer">{buttonData}</div></Link>:<div className="walletContainer" onClick={disconnectWallet}>{buttonData}</div>}
+                    
+                    <div className="marketbox">
+                        <Link to='/marketplace' className="market-text">
+                                <span>Marketplace</span>
+                        </Link>
+                    </div>
+
+                    <div className="marketbox">
+                        <Link to='/listnft' className="market-text">
+                            <span>Mint</span>
+                                
+                        </Link>
+                    </div>
+
                     <div className="userIcon">
                         <Link to='/profile' className="profile-icon">
                                 <FontAwesomeIcon icon={faUserCircle} size="2x" className="mainUserIcon"></FontAwesomeIcon>
                         </Link>
                     </div>
+
                 </div>
             </div>
 

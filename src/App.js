@@ -10,6 +10,7 @@ import {useCookies} from "react-cookie";
 import UserContext from "./components/context/context";
 import ListNFT from './components/listnft/listnft';
 import MarketPlace from './components/marketplace/marketplace';
+import NFTPage from './components/marketplace/NFTpage';
 import "./App.css";
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
           <Route path='/profile' element={<Profile userData={userData} walletSigner={walletSigner}/>}/>
           <Route path='/marketplace' element={<MarketPlace />} />
           <Route path='/listnft' element={<ListNFT/>} />
+          <Route path="/nftPage" element={<NFTPage />}/>             
+
         </Routes>
       </UserContext.Provider>
 

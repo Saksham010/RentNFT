@@ -68,12 +68,13 @@ async function buyNFT(tokenId) {
 
     const params = useParams();
     const tokenId = params.tokenId;
+    console.log("Working");
     if(!dataFetched)
         getNFTData(tokenId);
 
     return(
         <div>
-            <Navbar></Navbar>
+            <Navbar/>
             <div className="flex ml-20 mt-20">
                 <img src={data.image} alt="" className="w-2/5" />
                 <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">

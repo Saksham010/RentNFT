@@ -31,7 +31,7 @@ function NFTTile (data) {
                             }}>Buy now</button>
                         </div>
                         <div className="box-content">
-                            <p id="upper-para">{data.data.name.split(" ")} #  </p>
+                            <p id="upper-para">{data.data.name} #  </p>
                             <h3>{data.data.name}</h3>
                             
                         </div>

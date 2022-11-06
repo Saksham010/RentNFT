@@ -83,26 +83,28 @@ async function buyNFT(tokenId) {
                 <div className="externalContainer">
                     <div className="nftContainer">
                         <img src={data.image} alt="" className="w-2/5" />
+
                     </div>
-                    <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
-                        <div>
-                            Name: {data.name}
+                    <div className="informationContainer">
+                        <div >
+                            <span className="title">Name :</span> <span className="title-info">{data.name}</span>
                         </div>
                         <div>
-                            Description: {data.description}
+                            <span className="title">Description :</span><span className="title-info">{data.description}</span>
                         </div>
                         <div>
-                            Price: <span className="">{data.price + " ETH"}</span>
+                            <span className="title">Price :</span> <span className="title-info">{data.price + " ETH"}</span>
                         </div>
                         <div>
-                            Owner: <span className="text-sm">{data.owner}</span>
+                            <span className="title">Owner :</span> <span className="title-info">{data.owner}</span>
                         </div>
                         <div>
-                            Seller: <span className="text-sm">{data.seller}</span>
+                            <span className="title">Previous Owner :</span> <span className="title-info">{data.seller}</span>
                         </div>
-                        <div>
-                        { currAddress == data.owner?<div className="text-emerald-700">You are the owner of this NFT</div> :
-                            <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm" onClick={() => buyNFT(tokenId)}>Buy this NFT</button>
+                        <div className="buybtnContainer">
+                        { currAddress == data.owner?<div className="ownertext">You are the owner of this NFT</div>:
+                            <button className="buybtn" onClick={() => buyNFT(tokenId)}>Buy now</button>
+                     
                         
                         }
                         

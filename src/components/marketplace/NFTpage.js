@@ -72,7 +72,7 @@ async function buyNFT(tokenId) {
         getNFTData(tokenId);
 
     return(
-        <div style={{"min-height":"100vh"}}>
+        <div>
             <Navbar></Navbar>
             <div className="flex ml-20 mt-20">
                 <img src={data.image} alt="" className="w-2/5" />

@@ -67,10 +67,10 @@ async function buyNFT(tokenId) {
 }
 
     const params = useParams();
-    const tokenId = params.tokenId;
-    console.log("Working");
+    const tokenId = params.id;
+    console.log("Working: tokenId: ", tokenId);
     if(!dataFetched)
-        // getNFTData(tokenId);
+        getNFTData(tokenId);
 
     return(
         <div>

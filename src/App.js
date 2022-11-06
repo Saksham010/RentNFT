@@ -42,7 +42,7 @@ function App() {
           <Route path='/profile' element={<Profile userData={userData} walletSigner={walletSigner}/>}/>
           <Route path='/marketplace' element={<MarketPlace />} />
           <Route path='/listnft' element={<ListNFT/>} />
-          <Route path="/nftPage" element={<NFTPage />}/>             
+          <Route path="/nftPage/:id" element={<NFTPage />}/>             
 
         </Routes>
       </UserContext.Provider>

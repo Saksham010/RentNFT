@@ -78,7 +78,7 @@ async function buyNFT(tokenId) {
     return(
         <div>
             <Navbar/>
-            <div className="flex ml-20 mt-20">
+            <div className="nftpageContainer">
                 <img src={data.image} alt="" className="w-2/5" />
                 <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
                     <div>

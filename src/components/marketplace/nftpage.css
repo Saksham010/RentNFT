@@ -1,0 +1,23 @@
+.nftpageContainer{
+    height: 100vh;
+    background-color: #191C1F;
+    font-family: 'Inter'; 
+    color: #F5F5F5;
+    font-weight: 300;
+
+}
+
+
+.externalContainer{
+    /* width: 97.4%; */
+    /* display:grid; */
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-rows: 100px 150px 50px; */
+    
+    /* grid-template-rows: repeat(6, 70vh); */
+    border: 1px rgb(43, 46, 49) solid;
+    /* padding: 3vw 7vw; */
+    border-radius: 20px;
+    margin: 0 auto;
+}

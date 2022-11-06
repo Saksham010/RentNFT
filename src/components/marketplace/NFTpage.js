@@ -81,8 +81,9 @@ async function buyNFT(tokenId) {
             <Navbar/>
             <div className="nftpageContainer">
                 <div className="externalContainer">
-
-                    <img src={data.image} alt="" className="w-2/5" />
+                    <div className="nftContainer">
+                        <img src={data.image} alt="" className="w-2/5" />
+                    </div>
                     <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
                         <div>
                             Name: {data.name}

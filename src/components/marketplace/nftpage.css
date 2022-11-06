@@ -7,7 +7,6 @@
 
 }
 
-
 .externalContainer{
     /* width: 97.4%; */
     /* display:grid; */
@@ -20,4 +19,11 @@
     /* padding: 3vw 7vw; */
     border-radius: 20px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
+
+.nftpageContainer img{
+    border-radius: 6px;
+}
+

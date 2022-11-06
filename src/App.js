@@ -8,7 +8,7 @@ import {Route, Routes} from "react-router-dom";
 import HomePage from './components/homepage.js/homepage';
 import {useCookies} from "react-cookie";
 import UserContext from "./components/context/context";
-import ListNFT from './components/listnft/listnft';
+import SellNFT from './components/listnft/SellNFT';
 import MarketPlace from './components/marketplace/marketplace';
 import NFTPage from './components/marketplace/NFTpage';
 import "./App.css";
@@ -41,8 +41,9 @@ function App() {
           <Route path='/connect' element={<Authentication userData={userData} setData={setUserData} setWalletSigner={setWalletSigner}/>} />        
           <Route path='/profile' element={<Profile userData={userData} walletSigner={walletSigner}/>}/>
           <Route path='/marketplace' element={<MarketPlace />} />
-          <Route path='/listnft' element={<ListNFT/>} />
-          <Route path="/nftPage/:id" element={<NFTPage />}/>             
+          <Route path='/mint' element={<SellNFT/>} />
+          <Route path="/nftPage/:id" element={<NFTPage />}/>     
+
 
         </Routes>
       </UserContext.Provider>

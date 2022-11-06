@@ -58,7 +58,7 @@ export default function Navbar(props){
                     </div>
 
                     <div className="marketbox">
-                        <Link to='/listnft' className="market-text">
+                        <Link to='/mint' className="market-text">
                             <span>Mint</span>
                                 
                         </Link>

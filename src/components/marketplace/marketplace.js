@@ -52,16 +52,7 @@ export default function Marketplace() {
         //Fetch all the details of every NFT from the contract and display
         const items = await Promise.all(transaction.map(async i => {
             const tokenURI = await contract.tokenURI(i.tokenId);
-            let meta = await axios.get(tokenURI, {
-                method: 'GET',
-                mode: 'no-cors',
-                headers: {
-                  'Access-Control-Allow-Origin': '*',
-                  'Content-Type': 'application/json',
-                },
-                withCredentials: true,
-                credentials: 'same-origin',
-              });
+            let meta = await axios.get(tokenURI);
             meta = meta.data;
 
             let price = ethers.utils.formatUnits(i.price.toString(), 'ether');

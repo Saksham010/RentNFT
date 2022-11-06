@@ -69,8 +69,11 @@ async function buyNFT(tokenId) {
     const params = useParams();
     const tokenId = params.id;
     console.log("Working: tokenId: ", tokenId);
+    console.log("Current address: ",currAddress);
+
     if(!dataFetched)
         getNFTData(tokenId);
+
 
     return(
         <div>
@@ -94,9 +97,9 @@ async function buyNFT(tokenId) {
                         Seller: <span className="text-sm">{data.seller}</span>
                     </div>
                     <div>
-                    { currAddress == data.owner || currAddress == data.seller ?
+                    { currAddress == data.owner?<div className="text-emerald-700">You are the owner of this NFT</div> :
                         <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm" onClick={() => buyNFT(tokenId)}>Buy this NFT</button>
-                        : <div className="text-emerald-700">You are the owner of this NFT</div>
+                       
                     }
                     
                     <div className="text-green text-center mt-3">{message}</div>

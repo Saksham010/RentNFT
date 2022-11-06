@@ -2,6 +2,7 @@ import axie from "./tile.jpeg";
 import {
     BrowserRouter as Router,
     Link,
+    useNavigate,
   } from "react-router-dom";
 
 import "./marketplace.css";
@@ -10,6 +11,9 @@ function NFTTile (data) {
     const newTo = {
         pathname:"/nftPage/"+data.data.tokenId
     }
+
+    const navigate = useNavigate();
+
 
     console.log("Data detail: ",data.data);
 
@@ -22,7 +26,9 @@ function NFTTile (data) {
                     <div className="box" >
     
                         <div className="image" style={{backgroundImage:`url(${data.data.image})`, width:"100%", height:"26vh", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover" }} >
-                            <button>Buy now</button>
+                            <button onClick={()=>{
+                                navigate(`${newTo.pathname}`);
+                            }}>Buy now</button>
                         </div>
                         <div className="box-content">
                             <p id="upper-para">{data.data.name.split(" ")} #  </p>

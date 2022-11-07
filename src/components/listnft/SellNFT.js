@@ -86,17 +86,19 @@ export default function SellNFT () {
     
                 //massage the params to be sent to the create NFT request
                 const price = ethers.utils.parseUnits(formParams.price, 'ether')
-                // let listingPrice = await contract.getListPrice()
-                // listingPrice = await listingPrice.toString()
-    
-                //actually create the NFT
-                contract.createToken(metadataURL, price, { value: price }).then((transaction)=>{
-                                alert("Successfully listed your NFT!");
-                                updateMessage("");
-                                updateFormParams({ name: '', description: '', price: ''});
-                                window.location.replace("/")
+                let listingPrice = contract.getListPrice().then((listingPrice)=>{
+                    let finalPrice = listingPrice.toString();
+                    // listingPrice = await listingPrice.toString()
+        
+                    //actually create the NFT
+                    contract.createToken(metadataURL, price, { value: listingPrice }).then((transaction)=>{
+                                    alert("Successfully listed your NFT!");
+                                    updateMessage("");
+                                    updateFormParams({ name: '', description: '', price: ''});
+                                    window.location.replace("/")
+                    })
+                    // await transaction.wait()
                 })
-                // await transaction.wait()
             });
         }
         catch(e) {

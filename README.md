@@ -10,13 +10,13 @@ Prerequisites:
 Step 1:
 
 ```shell
-git clone repo
+git clone https://github.com/Saksham010/Wraprotocol.git
 ```
 
 Step 2:
 
 ```shell
-cd repo
+cd Wraprotocol
 npm install
 ```
 

@@ -52,7 +52,7 @@ export default function BorrowedCollection(props){
                     let contract = new ethers.Contract(Wrapper,WrapperABI, signer);
                     console.log("This is iteem",item.tokenId);
                     //Calling the contract to return the NFT
-                    contract.returnNFT(item.contractAddress, 2,props.borrowerAddress).then((transaction)=>{
+                    contract.returnNFT(item.contractAddress, item.tokenId,props.borrowerAddress).then((transaction)=>{
                         console.log("Transaction succeded", transaction);
                         updateNotification({
                             id: 'load-data',

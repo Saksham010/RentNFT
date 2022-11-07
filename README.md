@@ -75,6 +75,8 @@ npm start
 ```
 
 Open localhost:3000 to view your project.
+  
+#Be sure to change your wallet to mumbai testnet before connecting to the dapp.
  
 ### Hurray! Now go have fun with Wraprotocol Dapp 🥳
   

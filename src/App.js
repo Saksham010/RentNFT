@@ -12,6 +12,7 @@ import SellNFT from './components/listnft/SellNFT';
 import MarketPlace from './components/marketplace/marketplace';
 import NFTPage from './components/marketplace/NFTpage';
 import "./App.css";
+import NetworkCheck from './components/networkcheck';
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
   });
 
   console.log("Signer chaliracha",walletSigner);
+
+  NetworkCheck();
   //Paths
 
   return (

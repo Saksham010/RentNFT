@@ -4,6 +4,7 @@ import { uploadFileToIPFS, uploadJSONToIPFS } from "./pinata";
 import Marketplace from './Marketplace.json';
 import { useLocation } from "react-router";
 import "./sellnft.css";
+import { Alert } from "@mantine/core";
 
 export default function SellNFT () {
     const [formParams, updateFormParams] = useState({ name: '', description: '', price: ''});
@@ -36,8 +37,8 @@ export default function SellNFT () {
     async function uploadMetadataToIPFS() {
         const {name, description, price} = formParams;
         //Make sure that none of the fields are empty
-        if( !name || !description || !price || !fileURL)
-            return;
+        if( name == '' || description =='' || price =='' || fileURL == '')
+            return 'empty';
 
         const nftJSON = {
             name, description, price, image: fileURL
@@ -52,7 +53,8 @@ export default function SellNFT () {
             }
         }
         catch(e) {
-            console.log("error uploading JSON metadata:", e)
+            console.log("error uploading JSON metadata:", e);
+            return 'jsonerror'
         }
     }
 
@@ -62,6 +64,17 @@ export default function SellNFT () {
         //Upload data to IPFS
         try {
             const metadataURL = await uploadMetadataToIPFS();
+            await metadataURL.wait();
+
+            if(metadataURL == 'jsonerror' || metadataURL == 'empty'){
+                if(metadataURL == 'jsonerror'){
+                    alert("Json Upload error. Try again");
+                }
+                else{
+                    alert("Fill up the form completely");
+                }
+                return;
+            }
             //After adding your Hardhat network to your metamask, this code will get providers and signers
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();

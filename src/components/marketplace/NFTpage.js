@@ -31,8 +31,8 @@ async function getNFTData(tokenId) {
     let item = {
         price: meta.price,
         tokenId: tokenId,
-        seller: listedToken.seller,
-        owner: listedToken.owner,
+        seller: listedToken.owner,
+        owner: listedToken.seller,
         image: meta.image,
         name: meta.name,
         description: meta.description,

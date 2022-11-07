@@ -55,6 +55,8 @@ export default function Marketplace() {
             let meta = await axios.get(tokenURI);
             meta = meta.data;
 
+            console.log(" This is i: ",i);
+
             let price = ethers.utils.formatUnits(i.price.toString(), 'ether');
             let item = {
                 price,

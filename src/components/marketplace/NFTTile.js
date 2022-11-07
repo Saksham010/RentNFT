@@ -18,7 +18,7 @@ function NFTTile (data) {
     console.log("Data detail: ",data.data);
 
 
-        if(data.data.name != ''){
+        if(data.data.name != '' && data.data.name != 'Avinash#C'){
 
             return(
                 <div className="marketplaceContainer">

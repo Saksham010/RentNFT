@@ -91,7 +91,7 @@ export default function SellNFT () {
                     // listingPrice = await listingPrice.toString()
         
                     //actually create the NFT
-                    contract.createToken(metadataURL, price, { value: listingPrice }).then((transaction)=>{
+                    contract.createToken(metadataURL, price, { value: finalPrice }).then((transaction)=>{
                                     alert("Successfully listed your NFT!");
                                     updateMessage("");
                                     updateFormParams({ name: '', description: '', price: ''});

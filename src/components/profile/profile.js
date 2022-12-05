@@ -283,9 +283,10 @@ export default function Profile(props){
             <div className="profileCover">
 
                 <div className="profileCircle">
-                    <p className="ellipsis"> {walletAddress}</p>
 
                 </div>
+                <p className="ellipsis"> {walletAddress}</p>
+
 
             </div>
 
